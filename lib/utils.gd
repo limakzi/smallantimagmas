@@ -1,5 +1,24 @@
 #! @Arguments M
 #! @Description
+#! indentifies associativity index of <A>M</A>.
+#!
+#! @BeginExampleSession
+#! gap> OneSmallAntimagma(2);
+#! <magma with 2 generators>
+#! gap> AssociativityIndex(OneSmallAntimagma(2));
+#! 0
+#! gap> OneSmallGroup(4);
+#! <pc group of size 4 with 2 generators>
+#! gap> AssociativityIndex(OneSmallGroup(4));
+#! 64
+#! gap> AssociativityIndex(OneSmallGroup(4)) = 4^3;
+#! true
+#! @EndExampleSession
+#!
+DeclareGlobalFunction( "AssociativityIndex" );
+
+#! @Arguments M
+#! @Description
 #! identifies whether magma <A>M</A> is antiassociative magma.
 #!
 #! @BeginExampleSession
