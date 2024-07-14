@@ -23,7 +23,7 @@ InstallGlobalFunction(MagmaIsomorphism,
     function(M, N)
         local psi, n, p, m, elms;
         if Size(M) <> Size(N) then
-            return false;
+            return fail;
         fi;
 
         n := Size(M);
@@ -46,7 +46,7 @@ InstallGlobalFunction(MagmaAntiisomorphism,
         local psi, n, p, m, elms;
 
         if Size(M) <> Size(N) then
-            return false;
+            return fail;
         fi;
 
         n := Size(M);
