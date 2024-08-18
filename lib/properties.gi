@@ -32,10 +32,16 @@ InstallGlobalFunction(TransposedMagma,
         return MagmaByMultiplicationTable(TransposedMat(MultiplicationTable(M)));
 end);
 
+InstallGlobalFunction(MagmaIsomorphismInvariants,
+    function(M)
+        return [ Size(M), IsLeftCancellative(M), IsRightCancellative(M) ];
+end);
+
 InstallGlobalFunction(MagmaIsomorphism,
     function(M, N)
         local psi, n, p, m, elms;
-        if Size(M) <> Size(N) then
+
+        if MagmaIsomorphismInvariants(M) <> MagmaIsomorphismInvariants(N) then
             return fail;
         fi;
 
@@ -200,4 +206,10 @@ InstallGlobalFunction(HasPropertyA3,
             od;
         od;
         return false;
+end);
+
+InstallMethod(IdSmallAntimagma, "for a magma", [IsMagma],
+    function(N)
+        return [ Size(N),
+                 First( Filtered([1 .. NrSmallAntimagmas(3)], index -> IsMagmaIsomorphic(N, SmallAntimagma(3, index) )) ) ];
 end);

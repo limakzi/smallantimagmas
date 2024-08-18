@@ -11,7 +11,7 @@
 #! <pc group of size 4 with 2 generators>
 #! gap> AssociativityIndex(OneSmallGroup(4));
 #! 64
-#! gap> AssociativityIndex(OneSmallGroup(4)) = 4^3;
+#! gap> AssociativityIndex(OneSmallGroup(4)) = 4 ^ 3;
 #! true
 #! @EndExampleSession
 #!
@@ -44,6 +44,26 @@ DeclareGlobalFunction( "AllSubmagmas" );
 #! @EndExampleSession
 #!
 DeclareProperty( "IsAntiassociative", IsMagma );
+
+#! @Arguments M
+#! @Description
+#! identifies class of antiassociative magma <A>M</A>.
+#!
+#! @BeginExampleSession
+#! gap> IsAntiassociative(OneSmallGroup(16));
+#! false
+#! gap> IsAntiassociative(OneSmallAntimagma(2));
+#! true
+#! gap> IsAntiassociative(OneSmallAntimagma(3));
+#! true
+#! @EndExampleSession
+#!
+DeclareAttribute( "IdSmallAntimagma", IsMagma );
+
+#! @Arguments M
+#! @Description
+#! computes isomorphism invariants of <A>M</A>.
+DeclareGlobalFunction( "MagmaIsomorphismInvariants" );
 
 #! @Arguments M, N
 #! @Description
@@ -103,7 +123,7 @@ DeclareGlobalFunction( "IsMagmaIsomorphic" );
 #! @BeginExampleSession
 #! gap> N := SmallAntimagma(2, 1);
 #! <magma with 2 generators>
-#! gap> M:= SmallAntimagma(2, 1);
+#! gap> M := SmallAntimagma(2, 1);
 #! <magma with 2 generators>
 #! gap> N := SmallAntimagma(2, 2);
 #! <magma with 2 generators>
