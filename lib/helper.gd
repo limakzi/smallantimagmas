@@ -5,8 +5,8 @@ __SmallAntimagmaHelper.checkOrder := function(order)
             ErrorNoReturn("smallantimagmas: ", "<order> must be an integer");
         fi;
 
-        if order < 1 then
-            ErrorNoReturn("smallantimagmas:", "<order> must greater than or equal to 1");
+        if order < 2 then
+            ErrorNoReturn("smallantimagmas:", "<order> must greater than or equal to 2");
         fi;
 end;
 
@@ -63,4 +63,16 @@ __SmallAntimagmaHelper.getAllSmallAntimagmaMetadata := function(order)
     dir := __SmallAntimagmaHelper.getAllSmallAntimagmaMetadataDirectory(order);
     files := SortedList(List(Filtered(DirectoryContents(dir), f -> f <> ".." and f <> "."), f -> Filename(dir, f)));
     return ReadAsFunction(First(files));
+end;
+
+__SmallAntimagmaHelper.MultiplicationTableConvert := function(T)
+        local nrows;
+        nrows := NrRows(T);
+        return List(T, row -> Position( EnumeratorOfTuples([1 .. nrows], nrows), row ) );
+end;
+
+__SmallAntimagmaHelper.MultiplicationTableReverse := function(T)
+        local ncols;
+        ncols := Size(T);
+        return List(T, col -> EnumeratorOfTuples([1 .. ncols], ncols)[col] );
 end;
