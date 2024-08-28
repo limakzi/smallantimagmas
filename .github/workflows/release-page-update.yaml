@@ -1,7 +1,7 @@
 ---
 
-name: release-gh-page-update
-run-name: release-gh-page-update-${{ github.ref_name }}
+name: release
+run-name: release-${{ github.ref_name }}
 on:
   workflow_dispatch: 
   release:
@@ -10,24 +10,18 @@ on:
 
 env:
   gap-branch: stable-4.13
+  archive-file:  ${{ github.repository }}-${{ github.ref_name }}.tar.gz
 
 jobs:
-  gh-page-update:
+  assets-build:
     runs-on: ubuntu-22.04
     permissions:
       contents: write
-
     steps:
       - name: git -- checkout repository
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
-
-      - name: git -- checkout page
-        uses: actions/checkout@v4
-        with:
-          path: gh-pages
-          ref: gh-pages
 
       - uses: gap-actions/setup-gap@v2
         with:
@@ -37,6 +31,58 @@ jobs:
         uses: gap-actions/build-pkg-docs@v1
         with:
           use-latex: 'true'
+      
+      - name: github -- run clean up for tarball
+        run: |
+          echo "::group:: cleanup version control metadata"
+          rm -rvf .git
+          rm -rvf .svn
+
+          echo "::group:: cleanup deployment metadata"
+          rm -rvf .github
+          rm -v .codecov.yaml
+          rm -v .gaplint.yml
+          rm -v requirements.txt
+
+          echo "::group:: cleanup macos metadata"
+          find . -name .DS_Store -exec rm -f {} +
+          
+          echo "::group:: remove tex aux files"
+          find doc \( -name '*.aux' -o -name '*.bbl' -o -name '*.blg' -o -name '*.brf' -o -name '*.idx' -o -name '*.ilg' -o -name '*.ind' -o -name '*.log' -o -name '*.out' -o -name '*.pnr' -o -name '*.toc' -o -name '*.tst' \) -exec rm -f {} +
+
+      - name: pkg -- build an archive
+        run: |
+          tar -czvf ${{ env.archive-file }} .
+
+      - name: github -- upload artifacts
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            ${{ env.archive-file }}
+            doc/manual.pdf
+
+
+  update-website:
+    runs-on: ubuntu-22.04
+    needs: assets-build
+    permissions:
+      contents: write
+    steps:
+      - name: git -- checkout page
+        uses: actions/checkout@v4
+        with:
+          path: gh-pages
+          ref: gh-pages
+
+      - name: website -- download asset to be deployed
+        uses: robinraju/release-downloader@v1
+        with:
+          tag: ${{ github.ref_name }}
+          fileName: ${{ github.repository }}-${{ github.ref_name }}.tar.gz
+      
+      - name: website -- extract the archive
+        run: |
+          tar -xvf ${{ github.repository }}-${{ github.ref_name }}.tar.gz
 
       - name: metadata -- copy metada to update page
         run: |
