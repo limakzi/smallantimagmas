@@ -23,13 +23,15 @@
   \indexspace
 
   \item \texttt  {IdSmallAntimagma}
-    \subitem for IsMagma, \hyperpage{6}
+    \subitem for IsMagma, \hyperpage{7}
   \item \texttt  {IsAntiassociative}
     \subitem for IsMagma, \hyperpage{4}
   \item \texttt  {IsCancellative}
     \subitem for IsMagma, \hyperpage{5}
-  \item \texttt  {IsLeftCancellative}
+  \item \texttt  {IsDeranged}
     \subitem for IsMagma, \hyperpage{4}
+  \item \texttt  {IsLeftCancellative}
+    \subitem for IsMagma, \hyperpage{5}
   \item \texttt  {IsLeftCyclic}
     \subitem for IsMagma, \hyperpage{4}
   \item \texttt  {IsMagmaAntiisomorphic}, \hyperpage{8}
@@ -58,7 +60,7 @@
 
   \indexspace
 
-  \item \texttt  {NrSmallAntimagmas}, \hyperpage{9}
+  \item \texttt  {NrSmallAntimagmas}, \hyperpage{10}
 
   \indexspace
 
@@ -67,7 +69,7 @@
   \indexspace
 
   \item \texttt  {ReallyAllSmallAntimagmas}, \hyperpage{10}
-  \item \texttt  {ReallyNrSmallAntimagmas}, \hyperpage{10}
+  \item \texttt  {ReallyNrSmallAntimagmas}, \hyperpage{11}
   \item \texttt  {RightOrder}
     \subitem for IsExtRElement, \hyperpage{7}
   \item \texttt  {RightOrdersOfElements}
@@ -82,6 +84,6 @@
 
   \indexspace
 
-  \item \texttt  {TransposedMagma}, \hyperpage{8}
+  \item \texttt  {TransposedMagma}, \hyperpage{9}
 
 \end{theindex}

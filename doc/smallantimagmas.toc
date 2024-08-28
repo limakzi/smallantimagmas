@@ -1,18 +1,19 @@
 \contentsline {chapter}{\numberline {1}\textcolor {Chapter }{smallantimagmas automatic generated documentation}}{4}{chapter.1}%
 \contentsline {section}{\numberline {1.1}\textcolor {Chapter }{smallantimagmas automatic generated documentation of properties}}{4}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}\textcolor {Chapter }{IsAntiassociative (for IsMagma)}}{4}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}\textcolor {Chapter }{IsLeftCyclic (for IsMagma)}}{4}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}\textcolor {Chapter }{IsRightCyclic (for IsMagma)}}{4}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}\textcolor {Chapter }{IsLeftCancellative (for IsMagma)}}{4}{subsection.1.1.4}%
-\contentsline {subsection}{\numberline {1.1.5}\textcolor {Chapter }{IsRightCancellative (for IsMagma)}}{5}{subsection.1.1.5}%
-\contentsline {subsection}{\numberline {1.1.6}\textcolor {Chapter }{IsCancellative (for IsMagma)}}{5}{subsection.1.1.6}%
+\contentsline {subsection}{\numberline {1.1.2}\textcolor {Chapter }{IsDeranged (for IsMagma)}}{4}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}\textcolor {Chapter }{IsLeftCyclic (for IsMagma)}}{4}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}\textcolor {Chapter }{IsRightCyclic (for IsMagma)}}{4}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}\textcolor {Chapter }{IsLeftCancellative (for IsMagma)}}{5}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.6}\textcolor {Chapter }{IsRightCancellative (for IsMagma)}}{5}{subsection.1.1.6}%
+\contentsline {subsection}{\numberline {1.1.7}\textcolor {Chapter }{IsCancellative (for IsMagma)}}{5}{subsection.1.1.7}%
 \contentsline {section}{\numberline {1.2}\textcolor {Chapter }{smallantimagmas automatic generated documentation of attributes}}{5}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}\textcolor {Chapter }{AssociativityIndex (for IsMagma)}}{5}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}\textcolor {Chapter }{DiagonalOfMultiplicationTable (for IsMagma)}}{6}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}\textcolor {Chapter }{CommutativityIndex (for IsMagma)}}{6}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}\textcolor {Chapter }{AnticommutativityIndex (for IsMagma)}}{6}{subsection.1.2.4}%
 \contentsline {subsection}{\numberline {1.2.5}\textcolor {Chapter }{SquaresIndex (for IsMagma)}}{6}{subsection.1.2.5}%
-\contentsline {subsection}{\numberline {1.2.6}\textcolor {Chapter }{IdSmallAntimagma (for IsMagma)}}{6}{subsection.1.2.6}%
+\contentsline {subsection}{\numberline {1.2.6}\textcolor {Chapter }{IdSmallAntimagma (for IsMagma)}}{7}{subsection.1.2.6}%
 \contentsline {subsection}{\numberline {1.2.7}\textcolor {Chapter }{LeftOrder (for IsExtLElement)}}{7}{subsection.1.2.7}%
 \contentsline {subsection}{\numberline {1.2.8}\textcolor {Chapter }{RightOrder (for IsExtRElement)}}{7}{subsection.1.2.8}%
 \contentsline {subsection}{\numberline {1.2.9}\textcolor {Chapter }{LeftOrdersOfElements (for IsMagma)}}{7}{subsection.1.2.9}%
@@ -22,18 +23,18 @@
 \contentsline {subsection}{\numberline {1.3.2}\textcolor {Chapter }{MagmaIsomorphismInvariantsMatch}}{8}{subsection.1.3.2}%
 \contentsline {subsection}{\numberline {1.3.3}\textcolor {Chapter }{IsMagmaIsomorphic}}{8}{subsection.1.3.3}%
 \contentsline {subsection}{\numberline {1.3.4}\textcolor {Chapter }{IsMagmaAntiisomorphic}}{8}{subsection.1.3.4}%
-\contentsline {subsection}{\numberline {1.3.5}\textcolor {Chapter }{TransposedMagma}}{8}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.5}\textcolor {Chapter }{TransposedMagma}}{9}{subsection.1.3.5}%
 \contentsline {subsection}{\numberline {1.3.6}\textcolor {Chapter }{LeftPower}}{9}{subsection.1.3.6}%
 \contentsline {subsection}{\numberline {1.3.7}\textcolor {Chapter }{RightPower}}{9}{subsection.1.3.7}%
 \contentsline {subsection}{\numberline {1.3.8}\textcolor {Chapter }{AllSmallAntimagmas}}{9}{subsection.1.3.8}%
-\contentsline {subsection}{\numberline {1.3.9}\textcolor {Chapter }{NrSmallAntimagmas}}{9}{subsection.1.3.9}%
+\contentsline {subsection}{\numberline {1.3.9}\textcolor {Chapter }{NrSmallAntimagmas}}{10}{subsection.1.3.9}%
 \contentsline {subsection}{\numberline {1.3.10}\textcolor {Chapter }{SmallAntimagma}}{10}{subsection.1.3.10}%
 \contentsline {subsection}{\numberline {1.3.11}\textcolor {Chapter }{OneSmallAntimagma}}{10}{subsection.1.3.11}%
 \contentsline {subsection}{\numberline {1.3.12}\textcolor {Chapter }{ReallyAllSmallAntimagmas}}{10}{subsection.1.3.12}%
-\contentsline {subsection}{\numberline {1.3.13}\textcolor {Chapter }{ReallyNrSmallAntimagmas}}{10}{subsection.1.3.13}%
+\contentsline {subsection}{\numberline {1.3.13}\textcolor {Chapter }{ReallyNrSmallAntimagmas}}{11}{subsection.1.3.13}%
 \contentsline {subsection}{\numberline {1.3.14}\textcolor {Chapter }{AntimagmaGeneratorPossibleDiagonals}}{11}{subsection.1.3.14}%
 \contentsline {subsection}{\numberline {1.3.15}\textcolor {Chapter }{AntimagmaGeneratorFilterNonIsomorphicMagmas}}{11}{subsection.1.3.15}%
 \contentsline {section}{\numberline {1.4}\textcolor {Chapter }{smallantimagmas automatic generated documentation of methods}}{11}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}\textcolor {Chapter }{MagmaIsomorphism (for IsMagma, IsMagma)}}{11}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}\textcolor {Chapter }{MagmaAntiisomorphism (for IsMagma, IsMagma)}}{11}{subsection.1.4.2}%
-\contentsline {chapter}{Index}{12}{section*.4}%
+\contentsline {chapter}{Index}{13}{section*.4}%
