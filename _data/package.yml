@@ -1,6 +1,6 @@
 name: smallantimagmas
-version: "0.2.8"
-license: "GPL"
+version: "0.2.9"
+license: "GPL-3.0-or-later"
 date: 2024-08-28
 description: |
     A fork of smallgrp package for small antiassociative magmas
@@ -24,7 +24,7 @@ packageinfo: https://limakzi.github.io/smallantimagmas/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/limakzi/smallantimagmas/releases/download/v0.2.8/smallantimagmas-v0.2.8.tar.gz
+      url: https://github.com/limakzi/smallantimagmas/releases/download/v0.2.9/smallantimagmas-v0.2.9.tar.gz
 
 abstract: |
     The <span class="pkgname">smallantimagmas</span> package,    classifies all finite, antassociative magmas.
@@ -38,7 +38,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>Zab24</span>]   <b class='BibAuthor'>Zabielski, K.</b>,
      <i class='BibTitle'>smallantimagmas, A fork of smallgrp package for small antiassociative magmas,
-             Version 0.2.8</i>
+             Version 0.2.9</i>
      (<span class='BibYear'>2024</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://limakzi.github.io/smallantimagmas">https://limakzi.github.io/smallantimagmas</a></span>.
@@ -49,7 +49,7 @@ bibtex: |
     @misc{ smallantimagmas,
       author =           {Zabielski, K.},
       title =            {{smallantimagmas},  A  fork  of  smallgrp  package for
-                          small antiassociative magmas, {V}ersion 0.2.8},
+                          small antiassociative magmas, {V}ersion 0.2.9},
       month =            {Aug},
       year =             {2024},
       note =             {GAP package},
