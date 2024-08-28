@@ -1,0 +1,34 @@
+\indexentry{License|hyperpage}{2}
+\indexentry{IsAntiassociative@\texttt  {IsAntiassociative}!for IsMagma|hyperpage}{4}
+\indexentry{IsLeftCyclic@\texttt  {IsLeftCyclic}!for IsMagma|hyperpage}{4}
+\indexentry{IsRightCyclic@\texttt  {IsRightCyclic}!for IsMagma|hyperpage}{4}
+\indexentry{IsLeftCancellative@\texttt  {IsLeftCancellative}!for IsMagma|hyperpage}{4}
+\indexentry{IsRightCancellative@\texttt  {IsRightCancellative}!for IsMagma|hyperpage}{5}
+\indexentry{IsCancellative@\texttt  {IsCancellative}!for IsMagma|hyperpage}{5}
+\indexentry{AssociativityIndex@\texttt  {AssociativityIndex}!for IsMagma|hyperpage}{5}
+\indexentry{DiagonalOfMultiplicationTable@\texttt  {DiagonalOfMultiplicationTable}!for IsMagma|hyperpage}{6}
+\indexentry{CommutativityIndex@\texttt  {CommutativityIndex}!for IsMagma|hyperpage}{6}
+\indexentry{AnticommutativityIndex@\texttt  {AnticommutativityIndex}!for IsMagma|hyperpage}{6}
+\indexentry{SquaresIndex@\texttt  {SquaresIndex}!for IsMagma|hyperpage}{6}
+\indexentry{IdSmallAntimagma@\texttt  {IdSmallAntimagma}!for IsMagma|hyperpage}{6}
+\indexentry{LeftOrder@\texttt  {LeftOrder}!for IsExtLElement|hyperpage}{7}
+\indexentry{RightOrder@\texttt  {RightOrder}!for IsExtRElement|hyperpage}{7}
+\indexentry{LeftOrdersOfElements@\texttt  {LeftOrdersOfElements}!for IsMagma|hyperpage}{7}
+\indexentry{RightOrdersOfElements@\texttt  {RightOrdersOfElements}!for IsMagma|hyperpage}{7}
+\indexentry{AllSubmagmas@\texttt  {AllSubmagmas}|hyperpage}{7}
+\indexentry{MagmaIsomorphismInvariantsMatch@\texttt  {MagmaIsomorphismInvariantsMatch}|hyperpage}{8}
+\indexentry{IsMagmaIsomorphic@\texttt  {IsMagmaIsomorphic}|hyperpage}{8}
+\indexentry{IsMagmaAntiisomorphic@\texttt  {IsMagmaAntiisomorphic}|hyperpage}{8}
+\indexentry{TransposedMagma@\texttt  {TransposedMagma}|hyperpage}{8}
+\indexentry{LeftPower@\texttt  {LeftPower}|hyperpage}{9}
+\indexentry{RightPower@\texttt  {RightPower}|hyperpage}{9}
+\indexentry{AllSmallAntimagmas@\texttt  {AllSmallAntimagmas}|hyperpage}{9}
+\indexentry{NrSmallAntimagmas@\texttt  {NrSmallAntimagmas}|hyperpage}{9}
+\indexentry{SmallAntimagma@\texttt  {SmallAntimagma}|hyperpage}{10}
+\indexentry{OneSmallAntimagma@\texttt  {OneSmallAntimagma}|hyperpage}{10}
+\indexentry{ReallyAllSmallAntimagmas@\texttt  {ReallyAllSmallAntimagmas}|hyperpage}{10}
+\indexentry{ReallyNrSmallAntimagmas@\texttt  {ReallyNrSmallAntimagmas}|hyperpage}{10}
+\indexentry{AntimagmaGeneratorPossibleDiagonals@\texttt  {AntimagmaGeneratorPossibleDiagonals}|hyperpage}{11}
+\indexentry{AntimagmaGeneratorFilterNonIsomorphicMagmas@\texttt  {Antimagma}\-\texttt  {Generator}\-\texttt  {Filter}\-\texttt  {Non}\-\texttt  {Isomorphic}\-\texttt  {Magmas}|hyperpage}{11}
+\indexentry{MagmaIsomorphism@\texttt  {MagmaIsomorphism}!for IsMagma, IsMagma|hyperpage}{11}
+\indexentry{MagmaAntiisomorphism@\texttt  {MagmaAntiisomorphism}!for IsMagma, IsMagma|hyperpage}{11}
