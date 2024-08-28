@@ -195,7 +195,7 @@ gap> List(AllSmallAntimagmas(3), M -> DiagonalOfMultiplicationTable((M)));
 <ManSection>
   <Attr Arg="M" Name="SquaresIndex" Label="for IsMagma"/>
  <Description>
- computes squares index of <A>M</A> so the order of <Math>\left\{ m^2 | m \in \right\}</Math>.
+ computes squares index of <A>M</A> so the order of <Math>\left\{ m^2 | m \in M \right\}</Math>.
 <P/>
 <Example><![CDATA[
 gap> List(AllSmallAntimagmas(2), M -> List(M, m -> m * m) );                

@@ -3,7 +3,7 @@
                                [1X smallantimagmas [101X
   
   
-         [1X A fork of smallgrp package for small antiassociative magmas [101X
+              [1X A library of antiassociative magmas of small order [101X
   
   
                                      0.2.9

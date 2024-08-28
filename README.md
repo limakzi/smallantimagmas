@@ -1,6 +1,8 @@
+[![release](https://github.com/limakzi/smallantimagmas/actions/workflows/release-bump.yaml/badge.svg)](https://github.com/limakzi/smallantimagmas/actions/workflows/release-bump.yaml)
+
 ## smallantimagmas
 
-`smallgrp` alternative for _antiassociative magmas_.
+A library of antiassociative magmas of small order.
 
 
 ### Installation

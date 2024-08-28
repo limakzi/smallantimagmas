@@ -3,7 +3,7 @@ version: "0.2.9"
 license: "GPL-3.0-or-later"
 date: 2024-08-28
 description: |
-    A fork of smallgrp package for small antiassociative magmas
+    A library of antiassociative magmas of small order
 
 authors:
     - name: Kamil Zabielski
@@ -37,7 +37,7 @@ keywords: |
 citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>Zab24</span>]   <b class='BibAuthor'>Zabielski, K.</b>,
-     <i class='BibTitle'>smallantimagmas, A fork of smallgrp package for small antiassociative magmas,
+     <i class='BibTitle'>smallantimagmas, A library of antiassociative magmas of small order,
              Version 0.2.9</i>
      (<span class='BibYear'>2024</span>)<br />
     (<span class='BibNote'>GAP package</span>),
@@ -48,8 +48,8 @@ citeas: |
 bibtex: |
     @misc{ smallantimagmas,
       author =           {Zabielski, K.},
-      title =            {{smallantimagmas},  A  fork  of  smallgrp  package for
-                          small antiassociative magmas, {V}ersion 0.2.9},
+      title =            {{smallantimagmas}, A library of antiassociative magmas
+                          of small order, {V}ersion 0.2.9},
       month =            {Aug},
       year =             {2024},
       note =             {GAP package},

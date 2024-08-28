@@ -6,7 +6,7 @@
     smallantimagmas
   </Title>
   <Subtitle>
-    A fork of smallgrp package for small antiassociative magmas
+    A library of antiassociative magmas of small order
   </Subtitle>
   <Version>
     0.2.9
