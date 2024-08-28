@@ -6,7 +6,7 @@
               [1X A library of antiassociative magmas of small order [101X
   
   
-                                     0.2.9
+                                     0.2.10
   
   
                                  28 August 2024
