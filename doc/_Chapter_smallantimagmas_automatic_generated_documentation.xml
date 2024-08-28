@@ -30,16 +30,6 @@ true
 
 
 <ManSection>
-  <Prop Arg="M" Name="IsDeranged" Label="for IsMagma"/>
- <Returns><K>true</K> or <K>false</K>
-</Returns>
- <Description>
-  if magma is derannged <A>m</A>.
- </Description>
-</ManSection>
-
-
-<ManSection>
   <Prop Arg="M" Name="IsLeftCyclic" Label="for IsMagma"/>
  <Returns><K>true</K> or <K>false</K>
 </Returns>

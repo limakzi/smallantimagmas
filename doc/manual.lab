@@ -11,12 +11,11 @@
 \makelabel{smallantimagmas:Index}{Ind}{X83A0356F839C696F}
 \makelabel{smallantimagmas:License}{}{X81488B807F2A1CF1}
 \makelabel{smallantimagmas:IsAntiassociative for IsMagma}{1.1.1}{X7B8537C57970AE37}
-\makelabel{smallantimagmas:IsDeranged for IsMagma}{1.1.2}{X80C8C33D7F42CC2D}
-\makelabel{smallantimagmas:IsLeftCyclic for IsMagma}{1.1.3}{X8392BFEE78284DE1}
-\makelabel{smallantimagmas:IsRightCyclic for IsMagma}{1.1.4}{X7BE3D1C0801AE7EA}
-\makelabel{smallantimagmas:IsLeftCancellative for IsMagma}{1.1.5}{X7D994F7382127E77}
-\makelabel{smallantimagmas:IsRightCancellative for IsMagma}{1.1.6}{X85C01ECF83CD5484}
-\makelabel{smallantimagmas:IsCancellative for IsMagma}{1.1.7}{X7E58570787350F43}
+\makelabel{smallantimagmas:IsLeftCyclic for IsMagma}{1.1.2}{X8392BFEE78284DE1}
+\makelabel{smallantimagmas:IsRightCyclic for IsMagma}{1.1.3}{X7BE3D1C0801AE7EA}
+\makelabel{smallantimagmas:IsLeftCancellative for IsMagma}{1.1.4}{X7D994F7382127E77}
+\makelabel{smallantimagmas:IsRightCancellative for IsMagma}{1.1.5}{X85C01ECF83CD5484}
+\makelabel{smallantimagmas:IsCancellative for IsMagma}{1.1.6}{X7E58570787350F43}
 \makelabel{smallantimagmas:AssociativityIndex for IsMagma}{1.2.1}{X809A477180F2A0F6}
 \makelabel{smallantimagmas:DiagonalOfMultiplicationTable for IsMagma}{1.2.2}{X802DA9B083E7F4A3}
 \makelabel{smallantimagmas:CommutativityIndex for IsMagma}{1.2.3}{X87FED7267EB0A068}
