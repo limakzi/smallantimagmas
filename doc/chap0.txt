@@ -48,6 +48,12 @@
       1.1-4 IsLeftCancellative
       1.1-5 IsRightCancellative
       1.1-6 IsCancellative
+      1.1-7 IsLeftFPFInducted
+      1.1-8 IsRightFPFInducted
+      1.1-9 IsLeftDerangementInducted
+      1.1-10 IsRightDerangementInducted
+      1.1-11 IsLeftAlternative
+      1.1-12 IsRightAlternative
     1.2 [33X[0;0Ysmallantimagmas automatic generated documentation of attributes[133X
       1.2-1 AssociativityIndex
       1.2-2 DiagonalOfMultiplicationTable

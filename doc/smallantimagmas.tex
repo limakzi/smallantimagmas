@@ -291,6 +291,166 @@ contributions to this package and its documentation provided by \textsf{GAP} use
 
  }
 
+ 
+
+\subsection{\textcolor{Chapter }{IsLeftFPFInducted (for IsMagma)}}
+\logpage{[ 1, 1, 7 ]}\nobreak
+\hyperdef{L}{X7965D94579F05D6F}{}
+{\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsLeftFPFInducted({\mdseries\slshape M})\index{IsLeftFPFInducted@\texttt{IsLeftFPFInducted}!for IsMagma}
+\label{IsLeftFPFInducted:for IsMagma}
+}\hfill{\scriptsize (property)}}\\
+\textbf{\indent Returns:\ }
+\texttt{true} or \texttt{false} 
+
+
+
+ is a left\texttt{\symbol{45}}hand sided fixed\texttt{\symbol{45}}point free
+inducted \mbox{\texttt{\mdseries\slshape m}}. 
+
+ 
+\begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
+  !gapprompt@gap>| !gapinput@Display( MultiplicationTable( SmallAntimagma(2, 2) ) );|
+  [ [  2,  2 ],
+    [  1,  1 ] ]
+  !gapprompt@gap>| !gapinput@IsLeftFPFInducted( SmallAntimagma(2, 2) ); |
+  true
+\end{Verbatim}
+ 
+
+ }
+
+ 
+
+\subsection{\textcolor{Chapter }{IsRightFPFInducted (for IsMagma)}}
+\logpage{[ 1, 1, 8 ]}\nobreak
+\hyperdef{L}{X866768408460130D}{}
+{\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsRightFPFInducted({\mdseries\slshape M})\index{IsRightFPFInducted@\texttt{IsRightFPFInducted}!for IsMagma}
+\label{IsRightFPFInducted:for IsMagma}
+}\hfill{\scriptsize (property)}}\\
+\textbf{\indent Returns:\ }
+\texttt{true} or \texttt{false} 
+
+
+
+ is a right\texttt{\symbol{45}}hand sided fixed\texttt{\symbol{45}}point free
+inducted \mbox{\texttt{\mdseries\slshape m}}. 
+
+ 
+\begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
+  !gapprompt@gap>| !gapinput@Display( MultiplicationTable( SmallAntimagma(2, 1) ) );|
+  [ [  2,  1 ],
+    [  2,  1 ] ]
+  !gapprompt@gap>| !gapinput@IsRightFPFInducted( SmallAntimagma(2, 1) );            |
+  true
+\end{Verbatim}
+ 
+
+ }
+
+ 
+
+\subsection{\textcolor{Chapter }{IsLeftDerangementInducted (for IsMagma)}}
+\logpage{[ 1, 1, 9 ]}\nobreak
+\hyperdef{L}{X7B55200A7A734759}{}
+{\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsLeftDerangementInducted({\mdseries\slshape M})\index{IsLeftDerangementInducted@\texttt{IsLeftDerangementInducted}!for IsMagma}
+\label{IsLeftDerangementInducted:for IsMagma}
+}\hfill{\scriptsize (property)}}\\
+\textbf{\indent Returns:\ }
+\texttt{true} or \texttt{false} 
+
+
+
+ is a left\texttt{\symbol{45}}hand sided derangment inducted \mbox{\texttt{\mdseries\slshape m}}. 
+
+ 
+\begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
+  !gapprompt@gap>| !gapinput@M := SmallAntimagma(2, 2);|
+  <magma with 2 generators>
+  !gapprompt@gap>| !gapinput@IsLeftFPFInducted(M);|
+  true
+  !gapprompt@gap>| !gapinput@IsRightFPFInducted(M);|
+  false
+  !gapprompt@gap>| !gapinput@IsRightDerangementInducted(M);|
+  false
+\end{Verbatim}
+ 
+
+ }
+
+ 
+
+\subsection{\textcolor{Chapter }{IsRightDerangementInducted (for IsMagma)}}
+\logpage{[ 1, 1, 10 ]}\nobreak
+\hyperdef{L}{X7E0D0CD780550E81}{}
+{\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsRightDerangementInducted({\mdseries\slshape M})\index{IsRightDerangementInducted@\texttt{IsRightDerangementInducted}!for IsMagma}
+\label{IsRightDerangementInducted:for IsMagma}
+}\hfill{\scriptsize (property)}}\\
+\textbf{\indent Returns:\ }
+\texttt{true} or \texttt{false} 
+
+
+
+ is a right\texttt{\symbol{45}}hand sided derangment inducted \mbox{\texttt{\mdseries\slshape m}}. 
+
+ 
+\begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
+  !gapprompt@gap>| !gapinput@M := SmallAntimagma(2, 1);|
+  <magma with 2 generators>
+  !gapprompt@gap>| !gapinput@IsLeftFPFInducted(M);|
+  false
+  !gapprompt@gap>| !gapinput@IsRightFPFInducted(M);|
+  true
+  !gapprompt@gap>| !gapinput@IsRightDerangementInducted(M);|
+  true
+\end{Verbatim}
+ 
+
+ }
+
+ 
+
+\subsection{\textcolor{Chapter }{IsLeftAlternative (for IsMagma)}}
+\logpage{[ 1, 1, 11 ]}\nobreak
+\hyperdef{L}{X83147660820830E8}{}
+{\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsLeftAlternative({\mdseries\slshape M})\index{IsLeftAlternative@\texttt{IsLeftAlternative}!for IsMagma}
+\label{IsLeftAlternative:for IsMagma}
+}\hfill{\scriptsize (property)}}\\
+\textbf{\indent Returns:\ }
+\texttt{true} or \texttt{false} 
+
+
+
+ is a left\texttt{\symbol{45}}alternatve magma \mbox{\texttt{\mdseries\slshape M}}. 
+
+ 
+\begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
+\end{Verbatim}
+ 
+
+ }
+
+ 
+
+\subsection{\textcolor{Chapter }{IsRightAlternative (for IsMagma)}}
+\logpage{[ 1, 1, 12 ]}\nobreak
+\hyperdef{L}{X7C16C7657F8B5A61}{}
+{\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsRightAlternative({\mdseries\slshape M})\index{IsRightAlternative@\texttt{IsRightAlternative}!for IsMagma}
+\label{IsRightAlternative:for IsMagma}
+}\hfill{\scriptsize (property)}}\\
+\textbf{\indent Returns:\ }
+\texttt{true} or \texttt{false} 
+
+
+
+ is a right\texttt{\symbol{45}}alternatve magma \mbox{\texttt{\mdseries\slshape M}}. 
+
+ 
+\begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
+\end{Verbatim}
+ 
+
+ }
+
  }
 
  

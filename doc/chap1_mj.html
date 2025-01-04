@@ -34,6 +34,12 @@
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X7D994F7382127E77">1.1-4 IsLeftCancellative</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X85C01ECF83CD5484">1.1-5 IsRightCancellative</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X7E58570787350F43">1.1-6 IsCancellative</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X7965D94579F05D6F">1.1-7 IsLeftFPFInducted</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X866768408460130D">1.1-8 IsRightFPFInducted</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X7B55200A7A734759">1.1-9 IsLeftDerangementInducted</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X7E0D0CD780550E81">1.1-10 IsRightDerangementInducted</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X83147660820830E8">1.1-11 IsLeftAlternative</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X7C16C7657F8B5A61">1.1-12 IsRightAlternative</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap1_mj.html#X839C88FC81394B14">1.2 <span class="Heading">smallantimagmas automatic generated documentation of attributes</span></a>
 </span>
@@ -171,6 +177,110 @@ true
 <div class="example"><pre>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(AllSmallAntimagmas(2), M -&gt; IsCancellative(M));</span>
 [ false, false ]
+</pre></div>
+
+<p><a id="X7965D94579F05D6F" name="X7965D94579F05D6F"></a></p>
+
+<h5>1.1-7 IsLeftFPFInducted</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsLeftFPFInducted</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>is a left-hand sided fixed-point free inducted <var class="Arg">m</var>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( MultiplicationTable( SmallAntimagma(2, 2) ) );</span>
+[ [  2,  2 ],
+  [  1,  1 ] ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsLeftFPFInducted( SmallAntimagma(2, 2) ); </span>
+true
+</pre></div>
+
+<p><a id="X866768408460130D" name="X866768408460130D"></a></p>
+
+<h5>1.1-8 IsRightFPFInducted</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsRightFPFInducted</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>is a right-hand sided fixed-point free inducted <var class="Arg">m</var>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( MultiplicationTable( SmallAntimagma(2, 1) ) );</span>
+[ [  2,  1 ],
+  [  2,  1 ] ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsRightFPFInducted( SmallAntimagma(2, 1) );            </span>
+true
+</pre></div>
+
+<p><a id="X7B55200A7A734759" name="X7B55200A7A734759"></a></p>
+
+<h5>1.1-9 IsLeftDerangementInducted</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsLeftDerangementInducted</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>is a left-hand sided derangment inducted <var class="Arg">m</var>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := SmallAntimagma(2, 2);</span>
+&lt;magma with 2 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsLeftFPFInducted(M);</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsRightFPFInducted(M);</span>
+false
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsRightDerangementInducted(M);</span>
+false
+</pre></div>
+
+<p><a id="X7E0D0CD780550E81" name="X7E0D0CD780550E81"></a></p>
+
+<h5>1.1-10 IsRightDerangementInducted</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsRightDerangementInducted</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>is a right-hand sided derangment inducted <var class="Arg">m</var>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := SmallAntimagma(2, 1);</span>
+&lt;magma with 2 generators&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsLeftFPFInducted(M);</span>
+false
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsRightFPFInducted(M);</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsRightDerangementInducted(M);</span>
+true
+</pre></div>
+
+<p><a id="X83147660820830E8" name="X83147660820830E8"></a></p>
+
+<h5>1.1-11 IsLeftAlternative</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsLeftAlternative</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>is a left-alternatve magma <var class="Arg">M</var>.</p>
+
+
+<div class="example"><pre>
+</pre></div>
+
+<p><a id="X7C16C7657F8B5A61" name="X7C16C7657F8B5A61"></a></p>
+
+<h5>1.1-12 IsRightAlternative</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsRightAlternative</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>is a right-alternatve magma <var class="Arg">M</var>.</p>
+
+
+<div class="example"><pre>
 </pre></div>
 
 <p><a id="X839C88FC81394B14" name="X839C88FC81394B14"></a></p>
