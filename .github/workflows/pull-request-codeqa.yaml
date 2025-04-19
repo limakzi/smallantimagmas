@@ -1,0 +1,85 @@
+---
+name: Code quality
+run-name: code-quality-${{ github.event.number }} ${{ github.event.pull_request.title }}
+
+on:
+  pull_request:
+    branches:
+      - main
+
+# the `concurrency` settings ensure that not too many CI jobs run in parallel
+concurrency:
+  # group by workflow and ref; the last slightly strange component ensures that for pull
+  # requests, we limit to 1 concurrent job, but for the master branch we don't
+  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.ref != 'refs/heads/master' || github.run_number }}
+  cancel-in-progress: ${{ startsWith(github.ref, 'refs/pull/') }}
+
+jobs:
+  gaptest:
+    name: Code quality - unit-tests (${{ matrix.gap-branch }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        gap-branch:
+          - master
+          - stable-4.14
+          - stable-4.13
+          - stable-4.12
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup gap-system
+        uses: gap-actions/setup-gap@v2
+        with:
+          GAPBRANCH: ${{ matrix.gap-branch }}
+
+      - name: Build gap-package
+        uses: gap-actions/build-pkg@v1
+
+      - name: Provision documentation for package
+        uses: gap-actions/build-pkg-docs@v1
+        with:
+          use-latex: 'true'
+
+      - name: Run gap-tests
+        uses: gap-actions/run-pkg-tests@v3
+
+      - name: Run gap-tests (only-needed)
+        uses: gap-actions/run-pkg-tests@v3
+        with:
+          only-needed: true
+
+      - name: Show code-coverage
+        uses: gap-actions/process-coverage@v2
+
+  gaplint:
+    name: Code quality - gaplint
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+          cache: pip
+
+      - name: Install python-dependencies
+        uses: py-actions/py-dependency-install@v4
+        with:
+          update-pip: true
+
+      - name: Run gaplint
+        run: |
+          echo "::group:: gaplint -- *.g"
+          find . -name '*.g' | xargs -n1 gaplint
+          echo "::group:: gaplint -- *.gi"
+          find . -name '*.gi' | xargs -n1 gaplint
+          echo "::group:: gaplint -- *.gd"
+          find . -name '*.gd' | xargs -n1 gaplint
+          echo "::group:: gaplint -- *.tst"
+          find . -name '*.tst' | xargs -n1 gaplint
