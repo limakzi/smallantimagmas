@@ -6,13 +6,15 @@
               [1X A library of antiassociative magmas of small order [101X
   
   
-                                     0.3.0
+                                     0.4.0
   
   
-                                 4 January 2025
+                                  12 May 2025
   
   
                                 Kamil Zabielski
+  
+                                Ryszard Mazurek
   
   
   
@@ -45,15 +47,17 @@
       1.1-1 IsAntiassociative
       1.1-2 IsLeftCyclic
       1.1-3 IsRightCyclic
-      1.1-4 IsLeftCancellative
-      1.1-5 IsRightCancellative
-      1.1-6 IsCancellative
-      1.1-7 IsLeftFPFInducted
-      1.1-8 IsRightFPFInducted
-      1.1-9 IsLeftDerangementInducted
-      1.1-10 IsRightDerangementInducted
-      1.1-11 IsLeftAlternative
-      1.1-12 IsRightAlternative
+      1.1-4 IsLeftDistributive
+      1.1-5 IsRightDistributive
+      1.1-6 IsLeftCancellative
+      1.1-7 IsRightCancellative
+      1.1-8 IsCancellative
+      1.1-9 IsLeftFPFInducted
+      1.1-10 IsRightFPFInducted
+      1.1-11 IsLeftDerangementInducted
+      1.1-12 IsRightDerangementInducted
+      1.1-13 IsLeftAlternative
+      1.1-14 IsRightAlternative
     1.2 [33X[0;0Ysmallantimagmas automatic generated documentation of attributes[133X
       1.2-1 AssociativityIndex
       1.2-2 DiagonalOfMultiplicationTable

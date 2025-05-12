@@ -9,7 +9,7 @@
     A library of antiassociative magmas of small order
   </Subtitle>
   <Version>
-    0.3.0
+    0.4.0
   </Version>
   <Author>
     Kamil Zabielski<Alt Only="LaTeX"><Br/></Alt>
@@ -22,8 +22,19 @@ Poland<Br/>
 </Address>
 
   </Author>
+  <Author>
+    Ryszard Mazurek<Alt Only="LaTeX"><Br/></Alt>
+<Address>
+Department of Theoretical Computer Science<Br/>
+Białystok University of Technology<Br/>
+Wiejska 45A<Br/>
+15-325 Białystok<Br/>
+Poland<Br/>
+</Address>
+
+  </Author>
   <Date>
-    4 January 2025
+    12 May 2025
   </Date>
   <Copyright>
           <Index>License</Index>

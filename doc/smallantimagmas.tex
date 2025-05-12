@@ -98,18 +98,32 @@
 {\Huge \textbf{ A library of antiassociative magmas of small order \mbox{}}}\\
 \vfill
 
-{\Huge  0.3.0 \mbox{}}\\[1cm]
-{ 4 January 2025 \mbox{}}\\[1cm]
+{\Huge  0.4.0 \mbox{}}\\[1cm]
+{ 12 May 2025 \mbox{}}\\[1cm]
 \mbox{}\\[2cm]
 {\Large \textbf{ Kamil Zabielski\\
   \mbox{}}}\\
+{\Large \textbf{ Ryszard Mazurek\\
+  \mbox{}}}\\
 \hypersetup{pdfauthor= Kamil Zabielski\\
+  ;  Ryszard Mazurek\\
   }
 \end{center}\vfill
 
 \mbox{}\\
 {\mbox{}\\
 \small \noindent \textbf{ Kamil Zabielski\\
+  }\\
+  Address: \begin{minipage}[t]{8cm}\noindent
+ Department of Theoretical Computer Science\\
+ Bia{\l}ystok University of Technology\\
+ Wiejska 45A\\
+ 15\texttt{\symbol{45}}325 Bia{\l}ystok\\
+ Poland\\
+ \end{minipage}
+}\\
+{\mbox{}\\
+\small \noindent \textbf{ Ryszard Mazurek\\
   }\\
   Address: \begin{minipage}[t]{8cm}\noindent
  Department of Theoretical Computer Science\\
@@ -212,8 +226,56 @@ contributions to this package and its documentation provided by \textsf{GAP} use
 
  
 
-\subsection{\textcolor{Chapter }{IsLeftCancellative (for IsMagma)}}
+\subsection{\textcolor{Chapter }{IsLeftDistributive (for IsMagma)}}
 \logpage{[ 1, 1, 4 ]}\nobreak
+\hyperdef{L}{X7D377A068350EE46}{}
+{\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsLeftDistributive({\mdseries\slshape M})\index{IsLeftDistributive@\texttt{IsLeftDistributive}!for IsMagma}
+\label{IsLeftDistributive:for IsMagma}
+}\hfill{\scriptsize (property)}}\\
+\textbf{\indent Returns:\ }
+\texttt{true} or \texttt{false} 
+
+
+
+ if magma is left distributive \mbox{\texttt{\mdseries\slshape m}}. 
+
+ 
+\begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
+  !gapprompt@gap>| !gapinput@List(AllSmallAntimagmas(3), M -> IsLeftDistributive(M) );|
+  [ true, false, false, false, false, false, false, false, false, true ]
+\end{Verbatim}
+ 
+
+ }
+
+ 
+
+\subsection{\textcolor{Chapter }{IsRightDistributive (for IsMagma)}}
+\logpage{[ 1, 1, 5 ]}\nobreak
+\hyperdef{L}{X856E2BBA7B87F209}{}
+{\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsRightDistributive({\mdseries\slshape M})\index{IsRightDistributive@\texttt{IsRightDistributive}!for IsMagma}
+\label{IsRightDistributive:for IsMagma}
+}\hfill{\scriptsize (property)}}\\
+\textbf{\indent Returns:\ }
+\texttt{true} or \texttt{false} 
+
+
+
+ if magma is right distributive \mbox{\texttt{\mdseries\slshape m}}. 
+
+ 
+\begin{Verbatim}[commandchars=!@|,fontsize=\small,frame=single,label=Example]
+  !gapprompt@gap>| !gapinput@List(AllSmallAntimagmas(3), M -> IsRightDistributive(M) );|
+  [ false, false, false, false, true, false, false, false, true, false ]
+\end{Verbatim}
+ 
+
+ }
+
+ 
+
+\subsection{\textcolor{Chapter }{IsLeftCancellative (for IsMagma)}}
+\logpage{[ 1, 1, 6 ]}\nobreak
 \hyperdef{L}{X7D994F7382127E77}{}
 {\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsLeftCancellative({\mdseries\slshape M})\index{IsLeftCancellative@\texttt{IsLeftCancellative}!for IsMagma}
 \label{IsLeftCancellative:for IsMagma}
@@ -246,7 +308,7 @@ contributions to this package and its documentation provided by \textsf{GAP} use
  
 
 \subsection{\textcolor{Chapter }{IsRightCancellative (for IsMagma)}}
-\logpage{[ 1, 1, 5 ]}\nobreak
+\logpage{[ 1, 1, 7 ]}\nobreak
 \hyperdef{L}{X85C01ECF83CD5484}{}
 {\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsRightCancellative({\mdseries\slshape M})\index{IsRightCancellative@\texttt{IsRightCancellative}!for IsMagma}
 \label{IsRightCancellative:for IsMagma}
@@ -270,7 +332,7 @@ contributions to this package and its documentation provided by \textsf{GAP} use
  
 
 \subsection{\textcolor{Chapter }{IsCancellative (for IsMagma)}}
-\logpage{[ 1, 1, 6 ]}\nobreak
+\logpage{[ 1, 1, 8 ]}\nobreak
 \hyperdef{L}{X7E58570787350F43}{}
 {\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsCancellative({\mdseries\slshape M})\index{IsCancellative@\texttt{IsCancellative}!for IsMagma}
 \label{IsCancellative:for IsMagma}
@@ -294,7 +356,7 @@ contributions to this package and its documentation provided by \textsf{GAP} use
  
 
 \subsection{\textcolor{Chapter }{IsLeftFPFInducted (for IsMagma)}}
-\logpage{[ 1, 1, 7 ]}\nobreak
+\logpage{[ 1, 1, 9 ]}\nobreak
 \hyperdef{L}{X7965D94579F05D6F}{}
 {\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsLeftFPFInducted({\mdseries\slshape M})\index{IsLeftFPFInducted@\texttt{IsLeftFPFInducted}!for IsMagma}
 \label{IsLeftFPFInducted:for IsMagma}
@@ -322,7 +384,7 @@ inducted \mbox{\texttt{\mdseries\slshape m}}.
  
 
 \subsection{\textcolor{Chapter }{IsRightFPFInducted (for IsMagma)}}
-\logpage{[ 1, 1, 8 ]}\nobreak
+\logpage{[ 1, 1, 10 ]}\nobreak
 \hyperdef{L}{X866768408460130D}{}
 {\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsRightFPFInducted({\mdseries\slshape M})\index{IsRightFPFInducted@\texttt{IsRightFPFInducted}!for IsMagma}
 \label{IsRightFPFInducted:for IsMagma}
@@ -350,7 +412,7 @@ inducted \mbox{\texttt{\mdseries\slshape m}}.
  
 
 \subsection{\textcolor{Chapter }{IsLeftDerangementInducted (for IsMagma)}}
-\logpage{[ 1, 1, 9 ]}\nobreak
+\logpage{[ 1, 1, 11 ]}\nobreak
 \hyperdef{L}{X7B55200A7A734759}{}
 {\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsLeftDerangementInducted({\mdseries\slshape M})\index{IsLeftDerangementInducted@\texttt{IsLeftDerangementInducted}!for IsMagma}
 \label{IsLeftDerangementInducted:for IsMagma}
@@ -380,7 +442,7 @@ inducted \mbox{\texttt{\mdseries\slshape m}}.
  
 
 \subsection{\textcolor{Chapter }{IsRightDerangementInducted (for IsMagma)}}
-\logpage{[ 1, 1, 10 ]}\nobreak
+\logpage{[ 1, 1, 12 ]}\nobreak
 \hyperdef{L}{X7E0D0CD780550E81}{}
 {\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsRightDerangementInducted({\mdseries\slshape M})\index{IsRightDerangementInducted@\texttt{IsRightDerangementInducted}!for IsMagma}
 \label{IsRightDerangementInducted:for IsMagma}
@@ -410,7 +472,7 @@ inducted \mbox{\texttt{\mdseries\slshape m}}.
  
 
 \subsection{\textcolor{Chapter }{IsLeftAlternative (for IsMagma)}}
-\logpage{[ 1, 1, 11 ]}\nobreak
+\logpage{[ 1, 1, 13 ]}\nobreak
 \hyperdef{L}{X83147660820830E8}{}
 {\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsLeftAlternative({\mdseries\slshape M})\index{IsLeftAlternative@\texttt{IsLeftAlternative}!for IsMagma}
 \label{IsLeftAlternative:for IsMagma}
@@ -432,7 +494,7 @@ inducted \mbox{\texttt{\mdseries\slshape m}}.
  
 
 \subsection{\textcolor{Chapter }{IsRightAlternative (for IsMagma)}}
-\logpage{[ 1, 1, 12 ]}\nobreak
+\logpage{[ 1, 1, 14 ]}\nobreak
 \hyperdef{L}{X7C16C7657F8B5A61}{}
 {\noindent\textcolor{FuncColor}{$\triangleright$\enspace\texttt{IsRightAlternative({\mdseries\slshape M})\index{IsRightAlternative@\texttt{IsRightAlternative}!for IsMagma}
 \label{IsRightAlternative:for IsMagma}
@@ -1018,7 +1080,7 @@ specified size \mbox{\texttt{\mdseries\slshape n}} (a number)
   !gapprompt@gap>| !gapinput@N := MagmaByMultiplicationTable([ [2, 1], [2, 1] ]);|
   <magma with 2 generators>
   !gapprompt@gap>| !gapinput@MagmaIsomorphism(M, N);|
-  <mapping: Domain([ m1, m2 ]) -> Domain([ m1, m2 ]) >
+  <general mapping: Domain([ m1, m2 ]) -> Domain([ m1, m2 ]) >
 \end{Verbatim}
  
 

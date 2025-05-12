@@ -50,6 +50,42 @@ true
 
 
 <ManSection>
+  <Prop Arg="M" Name="IsLeftDistributive" Label="for IsMagma"/>
+ <Returns><K>true</K> or <K>false</K>
+</Returns>
+ <Description>
+  if magma is left distributive <A>m</A>.
+<P/>
+<Example><![CDATA[
+gap> List(AllSmallAntimagmas(3), M -> IsLeftDistributive(M) );
+[ true, false, false, false, false, false, false, false, false, true ]
+]]></Example>
+
+
+<P/>
+ </Description>
+</ManSection>
+
+
+<ManSection>
+  <Prop Arg="M" Name="IsRightDistributive" Label="for IsMagma"/>
+ <Returns><K>true</K> or <K>false</K>
+</Returns>
+ <Description>
+  if magma is right distributive <A>m</A>.
+<P/>
+<Example><![CDATA[
+gap> List(AllSmallAntimagmas(3), M -> IsRightDistributive(M) );
+[ false, false, false, false, true, false, false, false, true, false ]
+]]></Example>
+
+
+<P/>
+ </Description>
+</ManSection>
+
+
+<ManSection>
   <Prop Arg="M" Name="IsLeftCancellative" Label="for IsMagma"/>
  <Returns><K>true</K> or <K>false</K>
 </Returns>
@@ -672,7 +708,7 @@ gap> M := SmallAntimagma(2, 1);
 gap> N := MagmaByMultiplicationTable([ [2, 1], [2, 1] ]);
 <magma with 2 generators>
 gap> MagmaIsomorphism(M, N);
-<mapping: Domain([ m1, m2 ]) -> Domain([ m1, m2 ]) >
+<general mapping: Domain([ m1, m2 ]) -> Domain([ m1, m2 ]) >
 ]]></Example>
 
 

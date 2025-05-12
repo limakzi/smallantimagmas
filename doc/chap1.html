@@ -28,15 +28,17 @@
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7B8537C57970AE37">1.1-1 IsAntiassociative</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X8392BFEE78284DE1">1.1-2 IsLeftCyclic</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7BE3D1C0801AE7EA">1.1-3 IsRightCyclic</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7D994F7382127E77">1.1-4 IsLeftCancellative</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X85C01ECF83CD5484">1.1-5 IsRightCancellative</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7E58570787350F43">1.1-6 IsCancellative</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7965D94579F05D6F">1.1-7 IsLeftFPFInducted</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X866768408460130D">1.1-8 IsRightFPFInducted</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7B55200A7A734759">1.1-9 IsLeftDerangementInducted</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7E0D0CD780550E81">1.1-10 IsRightDerangementInducted</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X83147660820830E8">1.1-11 IsLeftAlternative</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7C16C7657F8B5A61">1.1-12 IsRightAlternative</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7D377A068350EE46">1.1-4 IsLeftDistributive</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X856E2BBA7B87F209">1.1-5 IsRightDistributive</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7D994F7382127E77">1.1-6 IsLeftCancellative</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X85C01ECF83CD5484">1.1-7 IsRightCancellative</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7E58570787350F43">1.1-8 IsCancellative</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7965D94579F05D6F">1.1-9 IsLeftFPFInducted</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X866768408460130D">1.1-10 IsRightFPFInducted</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7B55200A7A734759">1.1-11 IsLeftDerangementInducted</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7E0D0CD780550E81">1.1-12 IsRightDerangementInducted</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X83147660820830E8">1.1-13 IsLeftAlternative</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7C16C7657F8B5A61">1.1-14 IsRightAlternative</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap1.html#X839C88FC81394B14">1.2 <span class="Heading">smallantimagmas automatic generated documentation of attributes</span></a>
 </span>
@@ -122,9 +124,39 @@ true
 
 <p>if magma is left cyclic <var class="Arg">m</var>.</p>
 
+<p><a id="X7D377A068350EE46" name="X7D377A068350EE46"></a></p>
+
+<h5>1.1-4 IsLeftDistributive</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsLeftDistributive</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>if magma is left distributive <var class="Arg">m</var>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(AllSmallAntimagmas(3), M -&gt; IsLeftDistributive(M) );</span>
+[ true, false, false, false, false, false, false, false, false, true ]
+</pre></div>
+
+<p><a id="X856E2BBA7B87F209" name="X856E2BBA7B87F209"></a></p>
+
+<h5>1.1-5 IsRightDistributive</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsRightDistributive</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>if magma is right distributive <var class="Arg">m</var>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(AllSmallAntimagmas(3), M -&gt; IsRightDistributive(M) );</span>
+[ false, false, false, false, true, false, false, false, true, false ]
+</pre></div>
+
 <p><a id="X7D994F7382127E77" name="X7D994F7382127E77"></a></p>
 
-<h5>1.1-4 IsLeftCancellative</h5>
+<h5>1.1-6 IsLeftCancellative</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsLeftCancellative</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
@@ -148,7 +180,7 @@ true
 
 <p><a id="X85C01ECF83CD5484" name="X85C01ECF83CD5484"></a></p>
 
-<h5>1.1-5 IsRightCancellative</h5>
+<h5>1.1-7 IsRightCancellative</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsRightCancellative</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
@@ -163,7 +195,7 @@ true
 
 <p><a id="X7E58570787350F43" name="X7E58570787350F43"></a></p>
 
-<h5>1.1-6 IsCancellative</h5>
+<h5>1.1-8 IsCancellative</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCancellative</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
@@ -178,7 +210,7 @@ true
 
 <p><a id="X7965D94579F05D6F" name="X7965D94579F05D6F"></a></p>
 
-<h5>1.1-7 IsLeftFPFInducted</h5>
+<h5>1.1-9 IsLeftFPFInducted</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsLeftFPFInducted</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
@@ -196,7 +228,7 @@ true
 
 <p><a id="X866768408460130D" name="X866768408460130D"></a></p>
 
-<h5>1.1-8 IsRightFPFInducted</h5>
+<h5>1.1-10 IsRightFPFInducted</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsRightFPFInducted</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
@@ -214,7 +246,7 @@ true
 
 <p><a id="X7B55200A7A734759" name="X7B55200A7A734759"></a></p>
 
-<h5>1.1-9 IsLeftDerangementInducted</h5>
+<h5>1.1-11 IsLeftDerangementInducted</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsLeftDerangementInducted</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
@@ -235,7 +267,7 @@ false
 
 <p><a id="X7E0D0CD780550E81" name="X7E0D0CD780550E81"></a></p>
 
-<h5>1.1-10 IsRightDerangementInducted</h5>
+<h5>1.1-12 IsRightDerangementInducted</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsRightDerangementInducted</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
@@ -256,7 +288,7 @@ true
 
 <p><a id="X83147660820830E8" name="X83147660820830E8"></a></p>
 
-<h5>1.1-11 IsLeftAlternative</h5>
+<h5>1.1-13 IsLeftAlternative</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsLeftAlternative</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
@@ -269,7 +301,7 @@ true
 
 <p><a id="X7C16C7657F8B5A61" name="X7C16C7657F8B5A61"></a></p>
 
-<h5>1.1-12 IsRightAlternative</h5>
+<h5>1.1-14 IsRightAlternative</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsRightAlternative</code>( <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;property&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
@@ -656,7 +688,7 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N := MagmaByMultiplicationTable([ [2, 1], [2, 1] ]);</span>
 &lt;magma with 2 generators&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">MagmaIsomorphism(M, N);</span>
-&lt;mapping: Domain([ m1, m2 ]) -&gt; Domain([ m1, m2 ]) &gt;
+&lt;general mapping: Domain([ m1, m2 ]) -&gt; Domain([ m1, m2 ]) &gt;
 </pre></div>
 
 <p><a id="X7AB3F3E37D8A5687" name="X7AB3F3E37D8A5687"></a></p>

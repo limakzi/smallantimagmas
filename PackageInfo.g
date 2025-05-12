@@ -18,10 +18,10 @@ Subtitle := "A library of antiassociative magmas of small order",
 ##  See '?Extending: Version Numbers' in GAP help for an explanation
 ##  of valid version numbers. For an automatic package distribution update
 ##  you must provide a new version number even after small changes.
-Version := "0.3.0",
+Version := "0.4.0",
 
 ##  Release date of the current version in dd/mm/yyyy format.
-Date := "04/01/2025",
+Date := "12/05/2025",
 
 ## Optional: license of the package, as an SPDX short-form identifiers;
 ## see <https://spdx.org/ids> for an explanation what an SPDX ID is, and
@@ -144,6 +144,20 @@ Persons := [
                        "Poland" ] ),
     Place         := "Białystok, Poland",
     Institution   := "Białystok University of Technology"
+  ),
+  rec(
+    LastName      := "Mazurek",
+    FirstNames    := "Ryszard",
+    IsAuthor      := true,
+    IsMaintainer  := false,
+    PostalAddress := Concatenation( [
+                       "Department of Theoretical Computer Science\n",
+                       "Białystok University of Technology\n",
+                       "Wiejska 45A\n",
+                       "15-325 Białystok\n",
+                       "Poland" ] ),
+    Place         := "Białystok, Poland",
+    Institution   := "Białystok University of Technology"
   )
 ],
 
@@ -156,7 +170,7 @@ Persons := [
 ##    "other"         for all other packages
 ##
 # Status := "accepted",
-Status := "deposited",
+Status := "accepted",
 
 ##  You must provide the next two entries if and only if the status is
 ##  "accepted" because is was successfully refereed:
@@ -166,7 +180,7 @@ CommunicatedBy := "Kamil Zabielski (Białystok)",
 
 # format: mm/yyyy
 # AcceptDate := "08/1999",
-#AcceptDate := "",
+AcceptDate := "08/2025",
 
 ##  For a central overview of all packages and a collection of all package
 ##  archives it is necessary to have two files accessible which should be
@@ -286,24 +300,7 @@ Dependencies := rec(
 ##  done automatically and need not be included in this function.
 ##
 #AvailabilityTest := ReturnTrue,
-AvailabilityTest := function()
-  local path, file;
-    # test for existence of the compiled binary
-    path := DirectoriesPackagePrograms( "example" );
-    file := Filename( path, "hello" );
-    if file = fail then
-      LogPackageLoadingMessage( PACKAGE_WARNING,
-          [ "The program `hello' is not compiled,",
-            "`HelloWorld()' is thus unavailable.",
-            "See the installation instructions;",
-            "type: ?Installing the Example package" ] );
-    fi;
-    # if the hello binary was vital to the package we would return
-    # the following ...
-    # return file <> fail;
-    # since the hello binary is not vital we return ...
-    return true;
-  end,
+AvailabilityTest := ReturnTrue,
 
 ##  *Optional*: the LoadPackage mechanism produces a nice default banner from
 ##  the info in this file. Normally, there is no need to change it, and we

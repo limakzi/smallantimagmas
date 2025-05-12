@@ -34,7 +34,31 @@
   
   [33X[0;0Yif magma is left cyclic [3Xm[103X.[133X
   
-  [1X1.1-4 IsLeftCancellative[101X
+  [1X1.1-4 IsLeftDistributive[101X
+  
+  [33X[1;0Y[29X[2XIsLeftDistributive[102X( [3XM[103X ) [32X property[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0Yif magma is left distributive [3Xm[103X.[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XList(AllSmallAntimagmas(3), M -> IsLeftDistributive(M) );[127X[104X
+    [4X[28X[ true, false, false, false, false, false, false, false, false, true ][128X[104X
+  [4X[32X[104X
+  
+  [1X1.1-5 IsRightDistributive[101X
+  
+  [33X[1;0Y[29X[2XIsRightDistributive[102X( [3XM[103X ) [32X property[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0Yif magma is right distributive [3Xm[103X.[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XList(AllSmallAntimagmas(3), M -> IsRightDistributive(M) );[127X[104X
+    [4X[28X[ false, false, false, false, true, false, false, false, true, false ][128X[104X
+  [4X[32X[104X
+  
+  [1X1.1-6 IsLeftCancellative[101X
   
   [33X[1;0Y[29X[2XIsLeftCancellative[102X( [3XM[103X ) [32X property[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
@@ -55,7 +79,7 @@
     [4X[28X[ true, false ][128X[104X
   [4X[32X[104X
   
-  [1X1.1-5 IsRightCancellative[101X
+  [1X1.1-7 IsRightCancellative[101X
   
   [33X[1;0Y[29X[2XIsRightCancellative[102X( [3XM[103X ) [32X property[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
@@ -67,7 +91,7 @@
     [4X[28X[ false, true ][128X[104X
   [4X[32X[104X
   
-  [1X1.1-6 IsCancellative[101X
+  [1X1.1-8 IsCancellative[101X
   
   [33X[1;0Y[29X[2XIsCancellative[102X( [3XM[103X ) [32X property[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
@@ -79,7 +103,7 @@
     [4X[28X[ false, false ][128X[104X
   [4X[32X[104X
   
-  [1X1.1-7 IsLeftFPFInducted[101X
+  [1X1.1-9 IsLeftFPFInducted[101X
   
   [33X[1;0Y[29X[2XIsLeftFPFInducted[102X( [3XM[103X ) [32X property[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
@@ -94,7 +118,7 @@
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
-  [1X1.1-8 IsRightFPFInducted[101X
+  [1X1.1-10 IsRightFPFInducted[101X
   
   [33X[1;0Y[29X[2XIsRightFPFInducted[102X( [3XM[103X ) [32X property[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
@@ -109,7 +133,7 @@
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
-  [1X1.1-9 IsLeftDerangementInducted[101X
+  [1X1.1-11 IsLeftDerangementInducted[101X
   
   [33X[1;0Y[29X[2XIsLeftDerangementInducted[102X( [3XM[103X ) [32X property[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
@@ -127,7 +151,7 @@
     [4X[28Xfalse[128X[104X
   [4X[32X[104X
   
-  [1X1.1-10 IsRightDerangementInducted[101X
+  [1X1.1-12 IsRightDerangementInducted[101X
   
   [33X[1;0Y[29X[2XIsRightDerangementInducted[102X( [3XM[103X ) [32X property[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
@@ -145,7 +169,7 @@
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
-  [1X1.1-11 IsLeftAlternative[101X
+  [1X1.1-13 IsLeftAlternative[101X
   
   [33X[1;0Y[29X[2XIsLeftAlternative[102X( [3XM[103X ) [32X property[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
@@ -155,7 +179,7 @@
   [4X[32X  Example  [32X[104X
   [4X[32X[104X
   
-  [1X1.1-12 IsRightAlternative[101X
+  [1X1.1-14 IsRightAlternative[101X
   
   [33X[1;0Y[29X[2XIsRightAlternative[102X( [3XM[103X ) [32X property[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
@@ -495,7 +519,7 @@
     [4X[25Xgap>[125X [27XN := MagmaByMultiplicationTable([ [2, 1], [2, 1] ]);[127X[104X
     [4X[28X<magma with 2 generators>[128X[104X
     [4X[25Xgap>[125X [27XMagmaIsomorphism(M, N);[127X[104X
-    [4X[28X<mapping: Domain([ m1, m2 ]) -> Domain([ m1, m2 ]) >[128X[104X
+    [4X[28X<general mapping: Domain([ m1, m2 ]) -> Domain([ m1, m2 ]) >[128X[104X
   [4X[32X[104X
   
   [1X1.4-2 MagmaAntiisomorphism[101X
