@@ -3,12 +3,13 @@
 
 #SBATCH --partition ampere
 #SBATCH -t 1-00:00:00
-#SBATCH -o ./logs/gap-stdout-%j.txt
-#SBATCH -e ./logs/gap-stderr-%j.txt
 
 #SBATCH --job-name=smallantimagmas-classifier
 #SBATCH --no-requeue
 #SBATCH --verbose
+
+#SBATCH --output ./logs/stdout-%x-%j-%a.txt
+#SBATCH --error ./logs/stderr-%x-%j-%a.txt
 
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
