@@ -13,8 +13,7 @@
 
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-
-#SBATCH --array=1-16:10
+#SBATCH --array=1-1000%52
 
 set -x
 
