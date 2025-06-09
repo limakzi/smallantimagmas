@@ -7,10 +7,10 @@
 
 set -x
 
-~/.local/share/gap/gap -r -b -q << EOF
-    LoadPackage("smallantimagmas");
-    Read("root.g");
+gap -r -b -q << EOF
     order := 2;
-    id := ${SLURM_ARRAY_TASK_ID:-11};
+    id := ${SLURM_ARRAY_TASK_ID:-10};
+
+    Read("root.g");
     AntimagmaSaveToFile(order, id);
 EOF
